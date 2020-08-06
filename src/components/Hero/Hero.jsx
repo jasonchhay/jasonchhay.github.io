@@ -11,7 +11,7 @@ const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => {    
     if (window.innerWidth > 769) {
       setIsDesktop(true);
       setIsMobile(false);
