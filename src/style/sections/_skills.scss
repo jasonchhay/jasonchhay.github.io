@@ -13,6 +13,7 @@
       .skill {
         display: flex;
         font-size: 2rem;
+        justify-content: center;
 
         &-icon {
           margin-right: 1.5rem;
@@ -21,6 +22,20 @@
 
         .text-color-main:hover {
           transform: none;
+        }
+
+        @include respond(tab-land) {
+          margin-bottom: 2rem;
+
+          &-icon {
+            font-size: 1.5rem;
+            margin-top: 0.4rem;
+            margin-right: 1rem;
+          }
+
+          h1 {
+            font-size: 2rem;
+          }
         }
       }
 

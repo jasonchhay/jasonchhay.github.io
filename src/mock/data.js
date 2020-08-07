@@ -180,7 +180,7 @@ export const otherProjectsData = [
     title: 'QuickMaths',
     info:
       'Amazon Echo game, as part of the Penn State IT challenge for HackPSU 2018. This project won 3rd place within its challenge category.',
-    info2: 'Nuxt.js',
+    info2: 'Python',
     url: '',
     repo: 'https://github.com/jasonchhay/QuickMaths',
   },

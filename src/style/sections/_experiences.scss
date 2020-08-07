@@ -105,5 +105,15 @@
         }
       }
     }
+
+    @include respond(phone) {
+      .flex-column .nav .nav-pills {
+        margin-bottom: 3rem !important;
+      }
+
+      .tab-content {
+        padding-left: 0;
+      }
+    }
   }
 }

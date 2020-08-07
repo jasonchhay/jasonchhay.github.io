@@ -25,11 +25,11 @@ const Skills = () => {
       <Container>
         <div className="skills-wrapper">
           <Title title="Skills" />
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="15px">
+          <Fade top={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="15px">
             <Row>
               {skills.map((skill) => {
                 return (
-                  <Col key={skill.category} className="skill">
+                  <Col key={skill.category} className="skill" sm>
                     <i class={`fas fa-${skill.icon} skill-icon text-color-main`} />
                     <div className="skills-wrapper__text">
                       <div className="skills-wrapper__text-title">

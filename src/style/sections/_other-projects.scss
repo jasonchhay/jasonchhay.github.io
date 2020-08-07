@@ -11,12 +11,15 @@
   .card-wrapper {
     display: grid;
     grid-column-gap: 50px;
-    grid-template-columns: auto auto auto;
-
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
     margin-bottom: 15rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
+    }
+
+    & > div {
+      margin-bottom: 2.5rem;
     }
 
     .row {
