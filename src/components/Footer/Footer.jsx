@@ -43,7 +43,12 @@ const Footer = () => {
             Jacobo Martínez
           </a>
         </p>
-
+        <p className="footer__text">
+          Inspiration from{' '}
+          <a href="https://brittanychiang.com/" target="_blank" rel="noopener noreferrer">
+            Brittany Chiang
+          </a>
+        </p>
         {isEnabled && <GithubButtons />}
       </Container>
     </footer>
