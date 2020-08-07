@@ -24,6 +24,10 @@
           transform: none;
         }
 
+        .mobile-icon {
+          display: none;
+        }
+
         @include respond(tab-land) {
           margin-bottom: 2rem;
 
@@ -37,6 +41,22 @@
             font-size: 2rem;
           }
         }
+
+        @include respond(phone) {
+          .desktop-icon {
+            display: none;
+          }
+
+          .mobile-icon {
+            display: inherit;
+            margin-bottom: 0.75rem;
+            margin-right: 0;
+          }
+
+          h1 {
+            margin: 0;
+          }
+        }
       }
 
       &__text {
@@ -45,6 +65,7 @@
         i.fas {
           margin-right: 1rem;
         }
+
         &-title {
           align-items: center;
           font-size: 2rem;
@@ -53,6 +74,7 @@
             margin-right: 1rem;
           }
         }
+
         ul {
           padding-left: 0;
         }
@@ -61,6 +83,10 @@
           list-style: none;
           font-size: 1.6rem;
           margin-top: 1rem;
+        }
+
+        @include respond(phone) {
+          text-align: center;
         }
       }
     }
