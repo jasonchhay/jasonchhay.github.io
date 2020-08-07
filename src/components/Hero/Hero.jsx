@@ -37,7 +37,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--hero"
-              href={email}
+              href={`mailto:${email}`}
             >
               {cta}
             </a>
