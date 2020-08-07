@@ -9,20 +9,55 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: `Hi there, I'm `,
+  title: `Hi there, my name is `,
   name: 'Jason Chhay',
   subtitle: 'I like to code.',
-  cta: '',
+  cta: 'Contact me',
+  email: 'jasonchhay@gmail.com',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
+  paragraphOne:
+    "I'm a senior at Penn State, University Park studying Computer Science with a minor in Mathematics and Engineering Leadership Development through the Schreyer Honors College.",
+  paragraphTwo:
+    "As far as I can remember, I've been extremely passionate about technology. I wanted to do whatever it was possible to learn and grow. I taught myself Java in my freshman year of high school, only to later independently develop an Android project my senior year. That passion has carried into my college career, in which I've used my technical experience to help contribute to research labs, start-up companies, and student organizations.",
+  paragraphThree:
+    "I'm a full stack developer with a keen eye for aesthetic designs and strong user experiences. I'm not afraid to wear different hats when needed or learn things on the fly. ",
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
+
+// SKILLS DATA
+export const skillsData = [
+  {
+    category: 'Languages',
+    icon: 'code',
+    items: ['JavaScript', 'Python', 'HTML/CSS', 'Java', 'C', 'Kotlin', 'MATLAB'],
+  },
+  {
+    category: 'Frameworks',
+    icon: 'laptop-code',
+    items: ['Django', 'React.js', 'Vue.js', 'React Native', 'Android', 'Bootstrap'],
+  },
+  {
+    category: 'Tools',
+    icon: 'terminal',
+    items: ['Linux/Unix', 'MySQL', 'Git', 'Apache'],
+  },
+  {
+    category: 'Programs',
+    icon: 'window-restore',
+    items: [
+      'Figma',
+      'Adobe XD',
+      'Microsoft Office Suite',
+      'Adobe Photoshop',
+      'Adobe Illustrator',
+      'Microsoft Visual Studio',
+    ],
+  },
+];
 
 export const experiencesData = [
   {
@@ -119,21 +154,13 @@ export const experiencesData = [
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'project_covidseer.png',
+    title: 'COVIDSeer',
+    info:
+      'A search engine built off the CORD-19 dataset from Allen AI, allowing people to query for academic publications on COVID-19 to help with the global medical research effort.',
+    info2: 'Django, Elasticsearch, Python, Vue.js, Apache',
+    url: 'https://covidseer.ist.psu.edu',
+    repo: 'https://github.com/jasonchhay/CovidSeer', // if no repo, the button will not show up
   },
 ];
 
@@ -141,10 +168,30 @@ export const projectsData = [
 export const otherProjectsData = [
   {
     id: nanoid(),
-    title: '',
-    info: '',
+    title: 'Audio Gender Analyzer',
+    info:
+      ' Analyzes an audio file of human speech, identifies gender of speaker through MATLAB spectral analysis and Naive Bayes implementation through Python.',
+    info2: 'Python, MATLAB',
     url: '',
-    repo: '',
+    repo: 'https://github.com/jasonchhay/AudioGenderAnalyzer',
+  },
+  {
+    id: nanoid(),
+    title: 'QuickMaths',
+    info:
+      'Amazon Echo game, as part of the Penn State IT challenge for HackPSU 2018. This project won 3rd place within its challenge category.',
+    info2: 'Nuxt.js',
+    url: '',
+    repo: 'https://github.com/jasonchhay/QuickMaths',
+  },
+  {
+    id: nanoid(),
+    title: 'Forbidden Word',
+    info:
+      ' A Discord chat bot that plays a forbidden word game. When the game is active, players must make normal conversation but avoid saying 1000 secret random words or they will be penalized.',
+    info2: 'Python',
+    url: '',
+    repo: 'https://github.com/jasonchhay/ForbiddenWord',
   },
 ];
 // CONTACT DATA
@@ -152,8 +199,6 @@ export const contactData = {
   cta: 'Feel free to reach out to me!',
   btn: 'Email',
   email: 'jasonchhay@gmail.com',
-  linkedinBtn: 'LinkedIn',
-  linkedin: 'https://linkedin.com/in/jasonchhay',
 };
 
 // FOOTER DATA
@@ -161,23 +206,13 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://linkedin.com/in/jasonchhay',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/jasonchhay',
     },
   ],
 };

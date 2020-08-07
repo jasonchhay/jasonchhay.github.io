@@ -33,7 +33,12 @@ function Experience(props) {
                       const { company, id } = experience;
                       return (
                         <Nav.Item key={id}>
-                          <Nav.Link eventKey={index}>{company}</Nav.Link>
+                          <Nav.Link
+                            eventKey={index}
+                            className="cta-btn cta-btn--resume cta-btn--nav"
+                          >
+                            {company}
+                          </Nav.Link>
                         </Nav.Item>
                       );
                     })}

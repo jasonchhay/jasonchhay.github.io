@@ -1,8 +1,9 @@
 #projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
-  margin-top: -15rem;
+  background-color: inherit;
+  color: $white-color;
+  margin-top: -5rem;
   padding-top: 15rem;
+  padding-bottom: 0;
 
   @include respond(tab-land) {
     margin-top: 0;
@@ -44,6 +45,11 @@
         }
       }
 
+      &-subinfo {
+        margin-top: 1rem;
+        font-style: italic;
+      }
+
       & p > a {
         color: $secondary-color;
       }
@@ -52,6 +58,7 @@
     &__image {
       width: 90%;
       margin: 0 auto;
+      box-shadow: 20px 20px $primary-color;
 
       @include respond(tab-land) {
         width: 100%;
@@ -60,9 +67,9 @@
 
       & .thumbnail {
         border: none;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.32), 0 3px 6px rgba(0, 0, 0, 0.46);
         transition: all 0.2s ease-out;
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 6px 10px rgba(8, 5, 5, 0.16), 0 0 6px rgba(0, 0, 0, 0.1);
         transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow,
           0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
 
@@ -70,6 +77,23 @@
           border: 1px solid #d2d2d2;
           box-shadow: none;
           margin-bottom: 3.2rem;
+        }
+
+        .card-img-overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: 0.5s ease;
+          background-color: $black-color;
+        }
+
+        &:hover .card-img-overlay {
+          opacity: 0.4;
         }
       }
     }

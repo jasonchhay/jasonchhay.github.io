@@ -1,63 +1,41 @@
-#experience {
-  margin-top: 5rem;
-  background-color: $primary-color;
-  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+#other-projects {
+  background-color: inherit;
   color: $white-color;
-  height: 100%;
-  border-top: 0px;
-  padding: 5% 0 0%;
+  padding: 0 0 15rem;
 
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
   }
 
-  .experience-wrapper {
-    max-width: 70%;
-    min-height: 560px;
-    margin: auto auto 20px;
-    text-align: left;
+  .card-wrapper {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+
+    margin-bottom: 15rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
     }
 
-    .nav-pills .nav-link.active,
-    .nav-pills .show > .nav-link {
-      color: #00cdac;
-      background-color: white;
-      border: none;
-    }
+    .row {
+      margin-bottom: 8rem;
 
-    .tab-content {
-      padding-left: 2rem;
-    }
-
-    .company {
-      margin-bottom: 5rem;
-      .company-wrapper {
-        text-align: left;
+      @include respond(phone) {
+        margin-bottom: 4rem;
       }
     }
 
-    .position {
-      &-wrapper {
-        display: flex;
-        justify-content: space-between;
-      }
-      ul {
-        padding-left: 0;
-
-        li {
-          font-size: 1.6rem;
-          margin-top: 1em;
-          margin-left: 1em;
-          padding-left: 1em;
-        }
-      }
-    }
     &__text {
+      background-color: $primary-color;
+      background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       text-align: left;
+      padding: 3.5rem;
 
       @include respond(phone) {
         margin-bottom: 2.5rem !important;
@@ -72,12 +50,17 @@
         font-size: $mid-font-size;
 
         @include respond(phone) {
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
       }
 
-      & p > a {
-        color: $secondary-color;
+      &-subinfo {
+        margin: 2rem 0 1em;
+        font-style: italic;
+      }
+
+      a {
+        max-width: 100%;
       }
     }
 
