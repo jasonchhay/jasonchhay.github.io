@@ -5,7 +5,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: $black-color;
   color: $white-color;
   background-image: url('../images/portfolio-background.png');
   background-size: cover;
