@@ -38,7 +38,7 @@ const OtherProjects = () => {
                     distance="30px"
                   >
                     <div className="card-wrapper__text">
-                      <h3 className="card-wrapper__text-title">{title || 'Project Title'}</h3>
+                      <h3 className="card-wrapper__text-title">{title}</h3>
                       <div>
                         <p className="card-wrapper__text-info">
                           {info ||
