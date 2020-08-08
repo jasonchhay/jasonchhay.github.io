@@ -27,7 +27,7 @@ function Experience(props) {
           <Tab.Container defaultActiveKey={0}>
             <Row>
               <Col sm={3}>
-                <Fade top={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+                <Fade top={isDesktop} left={isMobile} duration={1000} delay={500} distance="30px">
                   <Nav variant="pills" className="flex-column">
                     {experiences.map((experience, index) => {
                       const { company, id } = experience;

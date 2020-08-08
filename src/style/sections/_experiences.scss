@@ -22,11 +22,20 @@
       margin-bottom: 0rem;
     }
 
+    .nav {
+      margin-bottom: 2rem !important;
+    }
+
     .nav-pills .nav-link.active,
     .nav-pills .show > .nav-link {
       color: #00cdac;
       background-color: white;
       border: none;
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+      outline: none;
     }
 
     .tab-content {
@@ -44,7 +53,12 @@
       &-wrapper {
         display: flex;
         justify-content: space-between;
+
+        @include respond(phone) {
+          display: block;
+        }
       }
+
       ul {
         padding-left: 0;
 
@@ -107,10 +121,6 @@
     }
 
     @include respond(phone) {
-      .flex-column .nav .nav-pills {
-        margin-bottom: 3rem !important;
-      }
-
       .tab-content {
         padding-left: 0;
       }

@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'Jason Chhay | Personal Website', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
-  description: 'Jason Chhay - Personal Website', // e.g: Welcome to my website
+  description: 'Welcome to my website!', // e.g: Welcome to my website
 };
 
 // HERO DATA
@@ -25,7 +25,7 @@ export const aboutData = {
     "As far as I can remember, I've been extremely passionate about technology. I wanted to do whatever it was possible to learn and grow. I taught myself Java in my freshman year of high school, only to later independently develop an Android project my senior year. That passion has carried into my college career, in which I've used my technical experience to help contribute to research labs, start-up companies, and student organizations.",
   paragraphThree:
     "I'm a full stack developer with a keen eye for aesthetic designs and strong user experiences. I'm not afraid to wear different hats when needed or learn things on the fly. ",
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1hpwQKjf4QNTTOkaEcq03ESrNU9L34Eol/view', // if no resume, the button will not show up
 };
 
 // SKILLS DATA
@@ -88,7 +88,7 @@ export const experiencesData = [
         start: 'May 2018',
         end: 'Present',
         description: [
-          'Leading project management for front-end development amongst graduate and undergraduate students for Elastic search engine built with Django and Vue.js.',
+          'Leading project management for front-end development amongst graduate and undergraduate students for Elastic search engine built with Python and Vue.js.',
           'Full-stack web developer for open-research search engine with Django and Elasticsearch for publications relating to COVID-19 to aid global research effort.',
           'Developed and deployed informative website on CiteSeerX search engine through Django web framework, utilizing Python, HTML/CSS, and SQL.',
           'Established online internal documentation wiki to ensure that contributions and resources can be easily tracked, and existing information can be maintained.',
