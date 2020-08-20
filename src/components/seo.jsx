@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import ogImage from '../images/og.png';
+
 const SEO = ({ title, description, image, article }) => {
   const query = graphql`
     query SEO {
@@ -12,7 +14,6 @@ const SEO = ({ title, description, image, article }) => {
           titleTemplate
           defaultDescription: description
           siteUrl: url
-          defaultImage: image
         }
       }
     }
@@ -20,19 +21,13 @@ const SEO = ({ title, description, image, article }) => {
 
   const { site } = useStaticQuery(query);
 
-  const {
-    defaultTitle,
-    titleTemplate,
-    defaultDescription,
-    siteUrl,
-    defaultImage,
-  } = site.siteMetadata;
+  const { defaultTitle, titleTemplate, defaultDescription, siteUrl } = site.siteMetadata;
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
-    url: `https://jasonchhay.com`,
+    image: image || `${siteUrl}${ogImage}`,
+    url: siteUrl,
   };
 
   return (

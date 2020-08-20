@@ -4,7 +4,6 @@ module.exports = {
     titleTemplate: '%s · Personal Website',
     description: 'Personal website and software developer portfolio of Jason Chhay.',
     url: 'https://www.jasonchhay.com', // No trailing slash allowed!
-    image: '/thumbnail.png', // Path to your image you placed in the 'static' folder
   },
 
   plugins: [
