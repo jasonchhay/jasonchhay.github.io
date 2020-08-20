@@ -7,7 +7,7 @@ import Projects from './Projects/Projects';
 import OtherProjects from './OtherProjects/OtherProjects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-import SEO from './seo';
+import SEO from './Seo';
 
 import { PortfolioProvider } from '../context/context';
 

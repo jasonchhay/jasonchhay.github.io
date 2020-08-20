@@ -40,10 +40,10 @@ export const skillsData = [
     icon: 'laptop-code',
     items: [
       'Django',
-      'React.js',
+      'React',
       'Vue.js',
       'Node.js',
-      'Express.js',
+      'Express',
       'React Native',
       'Android',
       'Bootstrap',
@@ -52,7 +52,7 @@ export const skillsData = [
   {
     category: 'Tools',
     icon: 'terminal',
-    items: ['Linux/Unix', 'MySQL', 'Git', 'Apache', 'Heroku'],
+    items: ['Linux/Unix', 'Elasticsearch', 'MySQL', 'Git', 'Apache', 'Heroku'],
   },
   {
     category: 'Programs',
@@ -177,7 +177,7 @@ export const projectsData = [
     title: 'QualityMix for Spotify',
     info:
       "Web application based off of Spotify's Recommendation API that allows users to create custom playlists based on their favorite artists, genres, songs, and specific song qualities like BPM and moodiness.",
-    info2: 'React.js, Express.js, Node.js, Spotify Web API',
+    info2: 'React, Express, Node.js, Spotify Web API',
     url: 'https://spotify-quality-mix.herokuapp.com/',
     repo: 'https://github.com/jasonchhay/SpotifyQualityMix', // if no repo, the button will not show up
   },
