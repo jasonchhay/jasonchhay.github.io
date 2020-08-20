@@ -38,12 +38,21 @@ export const skillsData = [
   {
     category: 'Frameworks',
     icon: 'laptop-code',
-    items: ['Django', 'React.js', 'Vue.js', 'React Native', 'Android', 'Bootstrap'],
+    items: [
+      'Django',
+      'React.js',
+      'Vue.js',
+      'Node.js',
+      'Express.js',
+      'React Native',
+      'Android',
+      'Bootstrap',
+    ],
   },
   {
     category: 'Tools',
     icon: 'terminal',
-    items: ['Linux/Unix', 'MySQL', 'Git', 'Apache'],
+    items: ['Linux/Unix', 'MySQL', 'Git', 'Apache', 'Heroku'],
   },
   {
     category: 'Programs',
@@ -157,10 +166,20 @@ export const projectsData = [
     img: 'project_covidseer.png',
     title: 'COVIDSeer',
     info:
-      'A search engine built off the CORD-19 dataset from Allen AI, allowing people to query for academic publications on COVID-19 to help with the global medical research effort.',
+      'Search engine built off the CORD-19 dataset from Allen AI, allowing people to query for academic publications on COVID-19 to help with the global medical research effort.',
     info2: 'Django, Elasticsearch, Python, Vue.js, Apache',
     url: 'https://covidseer.ist.psu.edu',
     repo: 'https://github.com/jasonchhay/CovidSeer', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project_qualitymix.png',
+    title: 'QualityMix for Spotify',
+    info:
+      "Web application based off of Spotify's Recommendation API that allows users to create custom playlists based on their favorite artists, genres, songs, and specific song qualities like BPM and moodiness.",
+    info2: 'React.js, Express.js, Node.js, Spotify Web API',
+    url: 'https://spotify-quality-mix.herokuapp.com/',
+    repo: 'https://github.com/jasonchhay/SpotifyQualityMix', // if no repo, the button will not show up
   },
 ];
 

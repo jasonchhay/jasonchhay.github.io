@@ -30,10 +30,12 @@ const Skills = () => {
               {skills.map((skill) => {
                 return (
                   <Col key={skill.category} className="skill" sm>
-                    <i class={`fas fa-${skill.icon} skill-icon text-color-main desktop-icon`} />
+                    <i className={`fas fa-${skill.icon} skill-icon text-color-main desktop-icon`} />
                     <div className="skills-wrapper__text">
                       <div className="skills-wrapper__text-title">
-                        <i class={`fas fa-${skill.icon} skill-icon text-color-main mobile-icon`} />
+                        <i
+                          className={`fas fa-${skill.icon} skill-icon text-color-main mobile-icon`}
+                        />
                         <h1>{skill.category}</h1>
                       </div>
                       <ul>

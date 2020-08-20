@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
@@ -25,7 +25,7 @@ const OtherProjects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Other Projects" />
-          <div class="card-wrapper">
+          <div className="card-wrapper">
             {otherProjects.map((project) => {
               const { title, info, info2, repo, id } = project;
               return (
