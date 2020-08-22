@@ -89,7 +89,7 @@ export const experiencesData = [
   },
   {
     id: nanoid(),
-    company: 'CiteSeerX',
+    company: 'Penn State College of IST - CiteSeerX',
     positions: [
       {
         title: 'Software Developer',
