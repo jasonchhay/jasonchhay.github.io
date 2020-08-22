@@ -7,7 +7,7 @@ import Projects from './Projects/Projects';
 import OtherProjects from './OtherProjects/OtherProjects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-import SEO from './Seo/Seo';
+// import SEO from './Seo/Seo';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -47,7 +47,6 @@ function App() {
     <PortfolioProvider
       value={{ hero, about, skills, experiences, projects, otherProjects, contact, footer }}
     >
-      <SEO />
       <Hero />
       <About />
       <Skills />
