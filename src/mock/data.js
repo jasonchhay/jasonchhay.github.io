@@ -80,7 +80,7 @@ export const experiencesData = [
         end: 'Present',
         description: [
           'Collaborating with 24 volunteers to build Django web applications utilized by thousands of students to streamline philanthropy efforts for childhood cancer.',
-          'Managing 2 other developers in UX design and front-end development and for internal web tools through HTML, CSS, jQuery, Vue.js, and Bootstrap.',
+          'Managing 2 other developers in UX design and front-end development for internal web tools through HTML, CSS, jQuery, Vue.js, and Bootstrap.',
           'Migrated Dockerized web stack to utilize webpack loader to deploy Javascript components for easier development and a more reactive user experience',
           'Designed and led development for intranet dashboard to provide more accessible information for upcoming deadlines and events for volunteers.',
         ],
