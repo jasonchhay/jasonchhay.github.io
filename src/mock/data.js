@@ -33,7 +33,7 @@ export const skillsData = [
   {
     category: 'Languages',
     icon: 'code',
-    items: ['JavaScript', 'Python', 'HTML/CSS', 'Java', 'C', 'Kotlin', 'MATLAB'],
+    items: ['JavaScript', 'Python', 'HTML/CSS', 'Swift', 'Java', 'C', 'Kotlin', 'MATLAB'],
   },
   {
     category: 'Frameworks',
@@ -43,6 +43,7 @@ export const skillsData = [
       'React',
       'Vue.js',
       'Node.js',
+      'SwiftUI',
       'Express',
       'React Native',
       'Android',
@@ -52,7 +53,7 @@ export const skillsData = [
   {
     category: 'Tools',
     icon: 'terminal',
-    items: ['Linux/Unix', 'Elasticsearch', 'MySQL', 'Git', 'Apache', 'Heroku'],
+    items: ['Linux/Unix', 'Elasticsearch', 'Docker', 'MySQL', 'Git', 'Apache', 'Heroku'],
   },
   {
     category: 'Programs',
@@ -64,6 +65,7 @@ export const skillsData = [
       'Adobe Photoshop',
       'Adobe Illustrator',
       'Microsoft Visual Studio',
+      'Xcode'
     ],
   },
 ];
@@ -83,6 +85,8 @@ export const experiencesData = [
           'Managing 2 other developers in UX design and front-end development for internal web tools through HTML, CSS, jQuery, Vue.js, and Bootstrap.',
           'Migrated Dockerized web stack to utilize webpack loader to deploy Javascript components for easier development and a more reactive user experience',
           'Designed and led development for intranet dashboard to provide more accessible information for upcoming deadlines and events for volunteers.',
+          'Developed frontend for Django-based web application for sharing anonymous text, image, and drawing-based messages amongst groups through Vue.js.',
+          'Overhauled frontend for online quiz platform to utilize decoupled structure, improve user experience, and make codebase more maintainable.'
         ],
       },
     ],
@@ -101,7 +105,7 @@ export const experiencesData = [
           'Full-stack web developer for open-research search engine with Django and Elasticsearch for publications relating to COVID-19 to aid global research effort.',
           'Developed and deployed informative website on CiteSeerX search engine through Django web framework, utilizing Python, HTML/CSS, and SQL.',
           'Established online internal documentation wiki to ensure that contributions and resources can be easily tracked, and existing information can be maintained.',
-          'Provide systems support and assistance on Linux servers for CiteSeerX academic search engine.',
+          'Utilized Docker to containerize decoupled web application to improve efficiency of installation and deployment on production web servers.'
         ],
       },
     ],
